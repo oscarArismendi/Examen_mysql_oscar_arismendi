@@ -1,7 +1,7 @@
 # Examen_mysql_oscar_arismendi
 
 ## ***Tech Haven***
-
+***NOTA: Este readme esta hecho de forma que se pone el enunciado de la consulta,subconsulta o procedimiento, se proporciona el codigo en mysql y se da el resultado.***
 ## Consultas
 
 1. Obtener la lista de todos los productos con sus precio
@@ -134,7 +134,6 @@ FROM
 	productos pro
 WHERE
 	pro.precio > 500;
-    -> pro.precio > 500;
 +--------------------+---------+
 | nombre             | precio  |
 +--------------------+---------+
@@ -240,6 +239,17 @@ INNER JOIN
 	pedidos pe ON pe.id_usuario = usu.id
 GROUP BY
 	usu.id;
++----------------+----------------------------+
+| nombre         | correo_electronico         |
++----------------+----------------------------+
+| Juan Perez     | juan.perez@example.com     |
+| Maria Lopez    | maria.lopez@example.com    |
+| Carlos Mendoza | carlos.mendoza@example.com |
+| Ana Gonzalez   | ana.gonzalez@example.com   |
+| Luis Torres    | luis.torres@example.com    |
+| Laura Rivera   | laura.rivera@example.com   |
++----------------+----------------------------+
+6 rows in set (0,00 sec)
 ```
 
 
